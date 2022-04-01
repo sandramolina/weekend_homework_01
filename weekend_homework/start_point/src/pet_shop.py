@@ -52,6 +52,6 @@ def add_pet_to_customer(customer, new_pet):
 
 def customer_can_afford_pet(customer, new_pet):
     can_buy_pet = False
-    if new_pet["price"] < customer["cash"]:
+    if new_pet["price"] <= customer["cash"]:
         can_buy_pet = True
     return can_buy_pet

@@ -34,3 +34,6 @@ def find_pet_by_name(pet_shop_list, pet_name):
 def remove_pet_by_name(pet_shop_list, pet_name):
     selected_pet = find_pet_by_name(pet_shop_list, pet_name)
     pet_shop_list["pets"].remove(selected_pet)
+
+def add_pet_to_stock(pet_shop_list, new_pet_obj):
+    pet_shop_list["pets"].append(new_pet_obj)

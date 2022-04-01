@@ -6,5 +6,5 @@ def get_pet_shop_name(list):
 def get_total_cash(list):
     return list["admin"]["total_cash"]
 
-def add_or_remove_cash(list, cash_in):
-    list["admin"]["total_cash"] += cash_in
+def add_or_remove_cash(list, cash_in_out):
+    list["admin"]["total_cash"] += cash_in_out

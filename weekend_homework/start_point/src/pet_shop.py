@@ -8,3 +8,6 @@ def get_total_cash(list):
 
 def add_or_remove_cash(list, cash_in_out):
     list["admin"]["total_cash"] += cash_in_out
+
+def get_pets_sold(list):
+    return list["admin"]["pets_sold"]

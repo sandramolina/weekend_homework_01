@@ -1,5 +1,4 @@
 # WRITE YOUR FUNCTIONS HERE 23 total
-
 def get_pet_shop_name(pet_shop_list):
     return pet_shop_list["name"]
 
@@ -65,3 +64,5 @@ def sell_pet_to_customer(pet_shop_list, pet, customer):
         increase_pets_sold(pet_shop_list, 1)
         remove_customer_cash(customer, pet_to_be_sold["price"])
         add_or_remove_cash(pet_shop_list, pet_to_be_sold["price"])
+    else:
+        return "No suficcient founds"
